@@ -1,0 +1,16 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+        - routes
+        - config
+        - database
+        - resources/views
+
+    # Level 0-9（推奨: 5）
+    level: 6
+
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
